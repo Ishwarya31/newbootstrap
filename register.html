@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Code by Web Dev Trick ( https://webdevtrick.com )-->
+<!--For More Source Code visit  https://webdevtrick.com -->
+<html>
+    
+<head>
+ <title>Bootstrap Login Form | Web Dev Trick</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+ <link rel="stylesheet" href="login.css">
+</head>
+<body>
+ <div class="container h-100">
+ <div class="d-flex justify-content-center h-100">
+ <div class="user_card">
+ <div class="d-flex justify-content-center">
+ <div class="brand_logo_container">
+     <img src="data:image/png;base64,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" alt=""  class="brand_logo">
+ <!-- <img src="https://webdevtrick.com/wp-content/uploads/logo-fb.png" class="brand_logo" alt="Logo"> -->
+ </div>
+ </div>
+ <div class="d-flex justify-content-center form_container">
+ <form>
+ <div class="input-group mb-3">
+ <div class="input-group-append">
+ <span class="input-group-text"><i class="fas fa-user"></i></span>
+ </div>
+ <input type="text" name="" class="form-control input_user" value="" placeholder="username or email">
+ </div>
+ <div class="input-group mb-2">
+ <div class="input-group-append">
+ <span class="input-group-text"><i class="fas fa-key"></i></span>
+ </div>
+ <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+ </div>
+ <div class="form-group">
+ <div class="custom-control custom-checkbox">
+ <input type="checkbox" class="custom-control-input" id="customControlInline">
+ <label class="custom-control-label" for="customControlInline">Remember Password</label>
+ </div>
+ </div>
+ </form>
+ </div>
+ <div class="d-flex justify-content-center mt-3 login_container">
+ <button type="button" name="button" class="btn login_btn">Login</button>
+ </div>
+ <div class="mt-4">
+ <div class="d-flex justify-content-center links">
+ Don't have an account? <a href="https://webdevtrick.com" class="ml-2">Sign Up</a>
+ </div>
+ <div class="d-flex justify-content-center links">
+ <a href="#">Forgot your password?</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
